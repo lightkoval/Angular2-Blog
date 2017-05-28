@@ -1,0 +1,16 @@
+<div class="comment-block" *ngIf="comments">
+    <h4 class="comment-title"> 10 Comments</h4>
+
+    <div class="comment" *ngFor="let comment of comments; let i = index">
+      <img src="img/author.png">
+      <span class="comment-name">{{comment.name}} </span>
+      <span class="comment-date">{{format(comment.createdAt)}}</span>
+      <span class="comment-delete" (click)="delete(comment)">X</span>
+      <span class="comment-edit" (click)="edit(comment, i)"><img src="img/edit.png" height="15"></span>
+      <span class="comment-answer" #parentId >Answer</span>
+      <p>{{comment.body}} </p>
+    </div>
+
+    <app-create-comment></app-create-comment>
+
+</div>

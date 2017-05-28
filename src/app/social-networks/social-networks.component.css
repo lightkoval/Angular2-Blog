@@ -1,0 +1,28 @@
+.social-networks {
+  background: #00bff0;
+  height: 40px;
+  width: 100%;
+}
+
+.social-box {
+  width: 1171px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.phone-number span {
+  color: #fff;
+  position: absolute;
+  top: 14px;
+  left: 40px;
+  font-size: 0.8em;
+}
+
+.social-icon img {
+  padding-right: 10px;
+}

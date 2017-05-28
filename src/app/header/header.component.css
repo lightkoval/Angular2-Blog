@@ -1,0 +1,53 @@
+
+/* Header*/
+
+.header {
+  background: #b7b7b7;
+  height: 475px;
+  border-bottom: 10px solid #00bff0;
+}
+
+.header-box {
+  width: 1171px;
+  margin: auto;
+  position: relative;
+}
+
+.header-box img {
+  width: 1171px;
+  height: 475px;
+}
+
+.active-box {
+  height: 50px;
+  width: 400px;
+  padding: 0 20px;
+  background: #00bff0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.active-box h2 {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.active-box span, p {
+  color: #fff;
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+}
+
+.active-box p {
+  padding-left: 20px;
+}
+
+

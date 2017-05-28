@@ -1,0 +1,21 @@
+.container-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1171px;
+  margin: 40px auto;
+
+}
+
+.content {
+  flex: 3;
+  background: #fff;
+
+}
+
+.sidebar {
+  flex: 1;
+  background: #00bff0;
+  margin-left: 20px;
+
+}

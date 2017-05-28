@@ -1,0 +1,12 @@
+<div class="container-box">
+  <div class="content">
+    <div class="list-box">
+      <app-user *ngFor="let user of users" [user]="user" ></app-user>
+    </div>
+  </div>
+  <div class="sidebar">
+    <button type="button" (click)="gotoUsers()">Users</button>
+    <button type="button" (click)="gotoForm()">Add user</button>
+  </div>
+</div>
+

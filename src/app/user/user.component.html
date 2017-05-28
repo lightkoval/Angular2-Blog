@@ -1,0 +1,8 @@
+<div class="user" (click)="onSelect(user)">
+  <a [routerLink]="['/users', user.id]">
+    <img class="user-avatar" src="img/avatar.png">
+    <div class="user-name">{{user.name}}</div>
+    <span class="user-role">{{user.role}}</span>
+    <span class="user-about">{{user.about}}</span>
+  </a>
+</div>

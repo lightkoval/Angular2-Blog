@@ -1,0 +1,20 @@
+<div class="container-box">
+  <div class="content">
+    <div class="form">
+      <h3>Edit user</h3>
+      <form *ngIf="user">
+        <input type="text" name="name" id="name" [(ngModel)]="user.name">
+        <label for="name">Name</label>
+        <input type="text" name="e-mail" id="email" [(ngModel)]="user.email">
+        <label for="email">E-mail</label>
+        <textarea name="about" id="about" [(ngModel)]="user.about"></textarea>
+        <label for="about" class="label-about">About user</label>
+        <button type="submit" (click)="save()">Save</button>
+      </form>
+    </div>
+  </div>
+  <div class="sidebar">
+    <button type="button" (click)="gotoUsers()">Users</button>
+    <button type="button" (click)="delete(user)">Delete</button>
+  </div>
+</div>

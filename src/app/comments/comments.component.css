@@ -1,0 +1,94 @@
+.container-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1171px;
+  margin: 40px auto;
+
+}
+
+.content {
+  flex: 3;
+  background: #fff;
+
+}
+
+.sidebar {
+  flex: 1;
+  background: #00bff0;
+  margin-left: 20px;
+
+}
+
+h4 {
+  border-top: 50px solid #72d0f4;
+  padding: 30px 20px 5px;
+  color: #72d0f4;
+  font-size: 22px;
+}
+
+.comment {
+  margin: 20px;
+}
+
+.comment img {
+  width: 25px;
+  float: left;
+  margin: 10px;
+}
+
+.comment-name {
+  color: #00bff0;
+  font-size: 15px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  margin: 10px 5px;
+}
+
+.comment-date {
+  color: #b7b7b7;
+  font-size: 13px;
+  display: block;
+  line-height: 25px;
+  float: left;
+  margin: 10px 5px;
+}
+
+.comment-answer {
+  float: right;
+  color: #72d0f4;
+  font-size: 13px;
+  display: block;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.comment-edit {
+  float: right;
+  line-height: 25px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.comment-edit img {
+  width: 15px;
+  margin: 10px 5px;
+}
+
+.comment-delete {
+  float: right;
+  color: #72d0f4;
+  font-size: 16px;
+  line-height: 25px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.comment p {
+  background: #f3f3f3;
+  line-height: 30px;
+  padding: 45px 10px 10px;
+  margin: 0;
+}

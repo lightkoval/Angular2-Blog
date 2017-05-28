@@ -1,0 +1,18 @@
+<div class="container-box">
+  <div class="content">
+    <div class="form">
+      <h3>Create post</h3>
+      <form (ngSubmit)="onSubmit(); postForm.reset()" #postForm="ngForm">
+        <input type="text" name="title" placeholder="Title" [(ngModel)]="post.title">
+        <select name="author" [(ngModel)]="post.authorId">
+          <option *ngFor="let author of authors" [ngValue]="author.id">{{author.name}} </option>
+        </select>
+        <textarea name="body" placeholder="Post body" [(ngModel)]="post.body"></textarea>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+  <div class="sidebar">
+    <button type="button" (click)="gotoPosts()">Users</button>
+  </div>
+</div>

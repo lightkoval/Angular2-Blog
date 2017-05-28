@@ -1,0 +1,29 @@
+<div class="container-box">
+  <div class="content">
+    <div class="post" *ngIf="post">
+      <h3>{{post.title}}</h3>
+      <div class="post-header">
+        <img src="img/time-icon.png">
+        <span>{{format(post.datePost)}}</span>
+        <img src="img/admin-icon.png">
+        <span>{{post.name}}</span>
+        <img src="img/comment-icon.png">
+        <span>12</span>
+        <img src="img/like-icon.png">
+        <span>150</span>
+      </div>
+      <div class="post-img">
+        <img src="http://placehold.it/863x350">
+      </div>
+      <div class="post-text">
+        <p>{{post.body}}</p>
+      </div>
+
+      <app-comments [post]="post"></app-comments>
+
+    </div>
+  </div>
+  <div class="sidebar">Blog</div>
+</div>
+
+

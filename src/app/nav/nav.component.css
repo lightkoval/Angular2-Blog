@@ -1,0 +1,53 @@
+.nav {
+  background: #72d0f4;
+  height: 100px;
+}
+
+.nav-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1171px;
+  margin: 0 auto;
+}
+
+.gym {
+  flex-grow: 1;
+}
+
+.menu {
+  flex-grow: 2;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  border: 1px solid #72d0f4;
+
+}
+
+.menu a:hover {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
